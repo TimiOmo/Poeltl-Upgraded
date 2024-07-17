@@ -1,0 +1,47 @@
+Colors
+Text:#F2EDE8
+Background:#030302
+Primary:#9E7A57
+Secondary:#211A12
+Accent:#A4805B
+
+
+createRandomPlayersOriginalish
+ function createRan(randPlayI) {
+  // randPlayI = Math.floor(Math.random() * playerData.length);
+  // randomId = playerData[randPlayI].PERSON_ID
+  const rname = playerData[randPlayI].DISPLAY_FIRST_LAST
+  const rteam = playerData[randPlayI].TEAM_ABBREVIATION
+  const rteamid = playerData[randPlayI].PERSON_ID
+  const rconf = checkConf(rteam)
+  const rdiv = checkDiv(rteam)
+  const rposition = playerData[randPlayI].POSITION[0]
+  const rheight = getHeight(playerData[randPlayI].HEIGHT)
+  const rage = findAge(playerData[randPlayI].BIRTHDATE)
+  const rno = playerData[randPlayI].JERSEY
+  lastGame.teamID = rteamid
+  whom.innerHTML = "Who is this?"
+  whom.classList.add('whos')
+  console.log(rteamid)
+  img.style.backgroundImage = "url(https://cdn.nba.com/headshots/nba/latest/1040x760/"+rteamid+".png)";
+  img.className = "silimg"
+  player.classList = "modalinfo"
+  player.appendChild(img)
+  player.appendChild(whom)
+  img.width = "360"
+  img.height = "250"
+
+  rplayerin = [
+    rname,
+    rteam, 
+    rconf,
+    rdiv,
+    rposition,
+    rheight,
+    rage,
+    rno
+  ]  
+
+  document.querySelector("#who").appendChild(player)
+  return rplayerin
+}

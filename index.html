@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Poeltl Upgraded | The BEST Nba Guessing Games</title>
+  <link href="daily.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="poeltlUpgradedFavi.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+</head>
+<body>
+    <nav>
+      <a href="/"><img src="poeltlUpgradedFinal.png" class="logo"></a>
+      <ul>
+        <li><button id="stats" class="top">Stats</button></li>
+        <li><button id="how" class="top">Rules</button></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeSIg6MFztj6cBoS0Sz0ph5XssHvo9WsecmuhtXdOjPQQ5-bg/viewform?usp=sf_link">Feedback</a></li>
+        <li><a  class="original" href="https://poeltl.dunk.town/">Try The Original!</a></li>
+      </ul>
+    </nav>
+    <div class="header">
+      <div class="container">
+        <h1>DAILY POELTL</h1>
+        <h5>Can you guess it?</h5>
+      </div>
+    </div>
+    <div class="main">
+      <div class="topmodals">
+        <div class="modal-container" id="modal_container">
+          <div class="How-To-Play" id="htp">
+              <div class="modal-header">
+                <div class="title">
+                  <h2>How to play</h2>
+                </div>
+                <button class="close"id="close">&times;</button>
+              </div>
+            <!-- <br> -->
+            <div class="rules">
+              <ul>
+                <li>You have eight guesses to guess the NBA player (current only)</li>
+                <li>
+                  <span class="green">Green</span>
+                  means your right!</li>
+                <li>
+                  <span class="yellow">Yellow</span> in the team column means the player played for this team at one point</li>
+                <li>
+                  <span class="yellow">Yellow</span> can also mean the category is within 2 (inches, years, numbers) of the mystery player</li>
+                <li>If you're stuck, take a look at the silhouette</li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+        <div class="modal-container-two" id="modal_container_two">
+          <div class="stats" id="sta">
+              <div class="modal-header-two">
+                <div class="title">
+                  <h2>YOUR STATS</h2>
+                </div>
+                <button class="close-two"id="closetwo">&times;</button>
+              </div>
+              <div class="modal-info">
+                  <div >
+                    <h3>Played</h3>
+                    <p id="Played">0</p>
+                  </div>
+                  <div>
+                    <h3>Win %</h3>
+                    <p id="Win%">0</p>
+                  </div>
+                  <div>
+                    <h3>Current Streak</h3>
+                    <p id="CurrentStreak">0</p>
+                  </div>
+                  <div>
+                    <h3>Max Streak</h3>
+                    <p id="MaxStreak">0</p>
+                  </div>
+              </div>
+              <h3>Guess Distribution</h3>
+              <div class="distribution" id = "d">
+                <div class= "bar-box">
+                  <div>1</div>
+                  <div class="bar-container">
+                    <div class="bar">
+                      <div class="num">0</div>
+                    </div>
+                  </div>
+               </div>
+               <div class="bar-box">
+                 <div>2</div>
+                 <div class="bar-container">
+                   <div class="bar">
+                     <div class="num">0</div>
+                   </div>
+                 </div>
+                  </div>
+                <div class="bar-box">
+                  <div>3</div>
+                  <div class="bar-container">
+                    <div class="bar">
+                      <div class="num">0</div>
+                    </div>
+                  </div>
+                  </div>
+                <div class="bar-box">
+                  <div>4</div>
+                  <div class="bar-container">
+                    <div class="bar">
+                      <div class="num">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar-box">
+                  <div>5</div>
+                  <div class="bar-container">
+                    <div class="bar">
+                      <div class="num">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar-box">
+                  <div>6</div>
+                  <div class="bar-container">
+                    <div class="bar">
+                      <div class="num">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar-box">
+                  <div>7</div>
+                  <div class="bar-container">
+                    <div class="bar">
+                      <div class="num">0</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar-box">
+                  <div>8</div>
+                  <div class="bar-container">
+                    <div class="bar">
+                      <div class="num">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      <div class="container">
+        <div class="search-contain">
+        <div id="autosuggest" class="search-bar">
+            <input type="text" autocomplete="off"
+              placeholder="Guess 1 of 8" class="inputs" id="inputs">
+        <div id="autosuggest-autosuggest__results" class="autosuggest__results-container">
+          <div class="autosuggest__results" id="wrapper"> 
+          </div>
+        </div>
+        </div>
+      </div>
+        <div class="buttoncon">
+        <button id="showsil">SHOW SILHOUETTE</button>
+        </div>
+      </div>
+      <div class="sil-container" id="sil_container">
+        <div class="Who-is"id="who">
+            <div class="sil-header">
+            <div class="title">
+              <h2>GUESS THE MYSTERY PLAYER</h2>
+            </div>  
+              <button class="close_three" id="closethree">&times;</button>        
+            </div>
+        </div>
+      </div>
+      <div class="game_container">
+        <div class="game_table">
+          <div class="game_table-head"  id="rowhead">
+            <div class="game_table-row">
+              <div class="game_table-cell"></div>
+              <div class="game_table-cell">Team</div>
+              <div class="game_table-cell">Conf</div>
+              <div class="game_table-cell">Div</div>
+              <div class="game_table-cell">Pos</div>
+              <div class="game_table-cell">Ht</div>
+              <div class="game_table-cell">Age</div>
+              <div class="game_table-cell">#</div>
+            </div>     
+          </div>
+
+          <div class="game_table-body" id="gamewrapper">
+      </div>
+    </div>
+      </div>
+  </div>
+    <div class="footer">
+      <footer class="container">
+        <a href="https://hoopdatahub.com" class="hoop"> Powered By HoopDataHub</a>
+    </div>
+  </footer>
+</body>
+  <script type="module" src="modal.js"></script>
+  <script type="module" src="data.js"></script>
+</html>
