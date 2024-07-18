@@ -78,5 +78,5 @@ document.addEventListener('click', e => {
 //       sil_container.setAttribute('closing', "")
 //     }
 //   }
-// })
+})
 
